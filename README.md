@@ -1,6 +1,6 @@
 # progra-odeaplicativos_99159
 
-## COMANDI BÁSICOS 
+## COMANDO BÁSICOS 
 
 
 
@@ -11,7 +11,7 @@ git pull .
 git add.
 
 3) Criar versionamento (commit):
-git commit -m "Comkandos básicos do git."
+git commit -m "Comandos básicos do git."
 
 4) Enviar alterações para GitHub:
 git push
