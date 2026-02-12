@@ -1,18 +1,18 @@
 * {
-    margin : 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
     background-color: rgb(215, 201, 219);
-    background-image: url("https://wallpapers.com/images/hd/teen-wolf-supernatural-teen-drama-zu61f36jeqxyytry.jpg");
+    background-image: url("")
 
 }
 
 h1 {
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: #a86639;
     font-size: 100px;
     margin: 40px;
 }
@@ -22,4 +22,49 @@ p {
     font-size: 15px;
     font-family: 'Arial'
     margin: 20px;
+}
+
+hr{
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+button{
+    display: block;
+    height: auto;
+    margin: 5px auto;
+    padding: 5px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+a {
+   display: block;
+   text-align: center;
+   text-decoration: none;
+   margin: 20px auto;
+   color: burlywood;
+
+
+}
+img{
+    display: block;
+    max-width: 300px;
+    margin: 10px auto;
+}
+
+input-group{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    width: 100%;
+}
+i
+nput[type="text"]{
+    margin: 0px auto;
+    text-aling: center;
+    border-radius: 3px;
+    outline: none;
 }
