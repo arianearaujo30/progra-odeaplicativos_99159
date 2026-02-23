@@ -1,0 +1,31 @@
+/* RESET DAS CONFIGURAÇÕES DO NAVEGADOR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;
+    background-image: url("assests/fundo.avif");
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    font-family: "Comic Sans MS";
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 60px;
+    font-family: "Gigi";
+
+}
+p{
+    text-align: justify;
+    font-size: 15px;
+    
+}
