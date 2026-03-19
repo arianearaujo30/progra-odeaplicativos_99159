@@ -1,0 +1,145 @@
+/* CONFIGURAÇÃO DO CORPO - FUNDO TROPICAL */
+body {
+    background-color: #fff9db; /* Amarelo clarinho */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    margin: 0;
+    color: #5d4037; /* Marrom para lembrar a casca/detalhes */
+}
+
+/* CABEÇALHO E LOGO */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo-container {
+    font-size: 60px;
+    background: #ffffff;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35% 65% 60% 40% / 45% 45% 55% 55%; /* Formato orgânico de abacaxi */
+    border: 5px solid #fcc419;
+    margin: 0 auto 15px;
+    box-shadow: 0 6px 15px rgba(252, 196, 25, 0.4);
+}
+
+h1 {
+    color: #e67e22; /* Laranja vibrante */
+    margin: 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 0px white;
+}
+
+/* FORMULÁRIO - A "POLPA" DO SITE */
+form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 30px;
+    border: 4px solid #fcc419;
+    box-shadow: 12px 12px 0px #ffec99; /* Sombra sólida estilo retrô */
+    width: 100%;
+    max-width: 350px;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #2f9e44; /* Verde da coroa do abacaxi */
+    font-size: 1.1rem;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ffec99;
+    border-radius: 12px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 1rem;
+    color: #5d4037;
+    transition: all 0.3s ease;
+}
+
+input[type="number"]:focus {
+    border-color: #fcc419;
+    background-color: #fffef2;
+    transform: scale(1.02);
+}
+
+/* BOTÃO - A "COROA" */
+button {
+    background-color: #2f9e44; /* Verde folha */
+    color: white;
+    border: none;
+    padding: 16px;
+    width: 100%;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 5px 0 #2b8a3e;
+    transition: all 0.1s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #40c057;
+}
+
+button:active {
+    transform: translateY(4px);
+    box-shadow: none;
+}
+
+/* RESULTADOS E ALERTAS */
+#resultado {
+    margin-top: 30px;
+    padding: 25px;
+    border-radius: 25px;
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    display: none;
+    font-weight: bold;
+    animation: bounceIn 0.5s ease;
+}
+
+.aprovado {
+    background-color: #ebfbee;
+    border: 4px solid #40c057;
+    color: #2b8a3e;
+}
+
+.reprovado {
+    background-color: #fff5f5;
+    border: 4px solid #ff6b6b;
+    color: #c92a2a;
+}
+
+.nota-final {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* ANIMAÇÃO DE ENTRADA */
+@keyframes bounceIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    70% { transform: scale(1.05); }
+    100% { transform: scale(1); opacity: 1; }
+}

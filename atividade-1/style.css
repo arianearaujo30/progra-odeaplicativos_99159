@@ -1,0 +1,101 @@
+body {
+    background-color: #fff0f3; /* Rosa bem clarinho */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #d63384; /* Rosa escuro para o texto */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header img {
+    max-width: 150px;
+    border-radius: 50%;
+    border: 5px solid #ff4d6d; /* Borda cor de morango */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #ff4d6d;
+    text-shadow: 2px 2px #ffffff;
+    font-size: 2.5em;
+}
+
+form {
+    background-color: #ffffff;
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+    border: 3px dashed #ffb3c1; /* Borda tracejada fofa */
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgba(255, 179, 193, 0.3);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ff4d6d;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ffccd5;
+    border-radius: 15px;
+    box-sizing: border-box; /* Garante que o padding não quebre o layout */
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #ff4d6d;
+}
+
+button {
+    background-color: #70e000; /* Verde folha/morango */
+    color: white;
+    padding: 12px 20px;
+    width: 100%;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #59b200;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background-color: #80ed99;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+#resultados {
+    margin-top: 30px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    min-width: 250px;
+    text-align: center;
+    border: 2px solid #ffccd5;
+}
+
+#resultados p {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #c9184a;
+}

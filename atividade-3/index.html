@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Eleitoral - Limão 🍋</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">🍋</div>
+        <h1>Posso Votar?</h1>
+        <p>Verifique sua obrigatoriedade eleitoral</p>
+    </header>
+
+    <main>
+        <form id="formVotacao">
+            <div class="campo">
+                <label for="idade">Qual é a sua idade?</label>
+                <input type="number" id="idade" placeholder="Digite sua idade" min="0" max="120" required>
+            </div>
+
+            <button type="submit">Verificar Status 🌿</button>
+        </form>
+
+        <div id="resultado"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

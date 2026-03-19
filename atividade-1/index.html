@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora da Moranguinho 🍓</title>
+    <style>
+        /* CONFIGURAÇÕES GERAIS */
+        body {
+            background-color: #fff0f3; /* Rosa bem clarinho */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #d63384; /* Rosa escuro para o texto */
+        }
+
+        /* CABEÇALHO */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header img {
+            max-width: 120px;
+            border-radius: 50%;
+            border: 5px solid #ff4d6d;
+            box-shadow: 0 4px 15px rgba(255, 77, 109, 0.3);
+            background-color: white;
+        }
+
+        h1 {
+            color: #ff4d6d;
+            text-shadow: 2px 2px #ffffff;
+            font-size: 2rem;
+            margin-top: 10px;
+        }
+
+        /* FORMULÁRIO (A CAIXINHA) */
+        form {
+            background-color: #ffffff;
+            max-width: 350px;
+            width: 90%;
+            border: 3px dashed #ffb3c1; /* Borda tracejada fofa */
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 10px 25px rgba(255, 179, 193, 0.4);
+        }
+
+        .campo {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #ff4d6d;
+            font-size: 1.1rem;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ffccd5;
+            border-radius: 15px;
+            box-sizing: border-box;
+            outline: none;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+
+        input[type="number"]:focus {
+            border-color: #ff4d6d;
+            background-color: #fffafb;
+        }
+
+        /* BOTÃO ESTILO MORANGUINHO */
+        button {
+            background-color: #70e000; /* Verde folha */
+            color: white;
+            padding: 15px;
+            width: 100%;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 4px 0 #59b200;
+            transition: all 0.2s;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #80ed99;
+            transform: scale(1.02);
+        }
+
+        button:active {
+            transform: translateY(4px);
+            box-shadow: none;
+        }
+
+        /* RESULTADOS */
+        #resultados {
+            margin-top: 25px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 350px;
+            text-align: center;
+            border: 2px solid #ffccd5;
+            display: none; /* Escondido até calcular */
+        }
+
+        .resultado-item {
+            background: #fff5f6;
+            margin: 8px 0;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            color: #c9184a;
+            border-left: 5px solid #ff4d6d;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div style="font-size: 80px;">🍓</div>
+        <h1>Calculadora Doce</h1>
+    </header>
+
+    <form id="formulario">
+        <div class="campo">
+            <label for="numero1">Primeiro Número:</label>
+            <input type="number" id="numero1" placeholder="Ex: 10" required>
+        </div>
+
+        <div class="campo">
+            <label for="numero2">Segundo Número:</label>
+            <input type="number" id="numero2" placeholder="Ex: 5" required>
+        </div>
+
+        <button type="submit">Calcular Magia ✨</button>
+    </form>
+
+    <div id="resultados"></div>
+
+    <script>
+        const form = document.getElementById('formulario');
+        const listaResultados = document.getElementById('resultados');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede a página de recarregar
+
+            const n1 = parseFloat(document.getElementById('numero1').value);
+            const n2 = parseFloat(document.getElementById('numero2').value);
+
+            const soma = n1 + n2;
+            const subtracao = n1 - n2;
+            const multiplicacao = n1 * n2;
+            const divisao = n2 !== 0 ? (n1 / n2).toFixed(2) : "Erro (divisão por zero)";
+
+            // Montando a exibição fofa
+            listaResultados.style.display = 'block';
+            listaResultados.innerHTML = `
+                <div class="resultado-item">Soma: <b>${soma}</b></div>
+                <div class="resultado-item">Subtração: <b>${subtracao}</b></div>
+                <div class="resultado-item">Multiplicação: <b>${multiplicacao}</b></div>
+                <div class="resultado-item">Divisão: <b>${divisao}</b></div>
+            `;
+        });
+    </script>
+
+</body>
+</html>
