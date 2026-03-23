@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RH Tropical - Verificador de Aposentadoria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">🍉</div>
+        <h1>RH Melancia</h1>
+        <p>Sistema de Qualificação de Aposentadoria</p>
+    </header>
+
+    <main>
+        <form id="formAposentadoria">
+            <div class="campo">
+                <label for="matricula">Matrícula (Código):</label>
+                <input type="text" id="matricula" placeholder="Ex: EMP123" required>
+            </div>
+
+            <div class="campo">
+                <label for="anoNascimento">Ano de Nascimento:</label>
+                <input type="number" id="anoNascimento" min="1900" max="2026" placeholder="Ex: 1960" required>
+            </div>
+
+            <div class="campo">
+                <label for="tempoTrabalho">Tempo de Trabalho (anos):</label>
+                <input type="number" id="tempoTrabalho" min="0" placeholder="Ex: 30" required>
+            </div>
+
+            <button type="submit">Verificar Qualificação 🍉</button>
+        </form>
+
+        <div id="resultado"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
